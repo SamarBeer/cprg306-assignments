@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export default function Page() {
+export default function StudentInfo() {
   return (
     <main>
       <h1>Student Information</h1>
