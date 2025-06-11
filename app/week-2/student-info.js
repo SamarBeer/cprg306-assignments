@@ -6,7 +6,7 @@ export default function StudentInfo() {
       Student ID: 000938609
       </h1>
       <Link href="https://github.com/SamarBeer/cprg306-assignments" legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-500">GitHub Repository</a>
       </Link>
     </div>
   );
