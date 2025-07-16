@@ -1,14 +1,3 @@
-// import Link from 'next/link';
-
-// export default function MainPage() {
-//   return (
-//     <div>
-//       <h1>CPRG 306: Web Development 2 - Assignments</h1>
-//       <Link href="/week-2">Week 2 Page</Link>
-//     </div>
-//   );
-// }
-// This is the main page of the application, linking to the Week 2 page.
 
 
 import Link from "next/link";
@@ -37,6 +26,9 @@ export default function MainPage(){
         </li>
         <li>
           <Link href="/week-8" className="underline hover:text-blue-500">Week 8 Page</Link>
+        </li>
+        <li>
+          <Link href="/week-9" className="underline hover:text-blue-500">Week 9 Page</Link>
         </li>
       </ul>
     </div>
