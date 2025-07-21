@@ -23,7 +23,6 @@ export default function ShoppingListPage() {
     <div style={{ padding: '20px' }}>
       <h1>Shopping List</h1>
       <p>This is your protected shopping list page.</p>
-      {/* Your actual shopping list UI can go here */}
     </div>
   );
 }

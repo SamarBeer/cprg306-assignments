@@ -25,7 +25,7 @@ export default function Page() {
 
   return (
     <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
-      <h1>Welcome to the Week 9 App</h1>
+      <h1>Welcome to the Week 10 App</h1>
 
       {!user ? (
         <button onClick={handleLogin}>Login with GitHub</button>
