@@ -38,7 +38,7 @@ export default function Page() {
           <br />
           <br />
           <Link href="/week-8/">
-            Go to Shopping List
+            Go to Shopping ListW
           </Link>
         </div>
       )}
