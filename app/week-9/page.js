@@ -39,7 +39,7 @@ export default function Page() {
           <br />
           <Link href="/week-8/">
             Go to Shopping List
-          </Link>
+          </Link> 
         </div>
       )}
     </div>
