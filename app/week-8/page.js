@@ -1,4 +1,5 @@
 'use client';
+console.log("🧪 Fresh week-8/page.js build triggered");
 
 import { useState } from 'react';
 import NewItem from './week-8/new-item';
