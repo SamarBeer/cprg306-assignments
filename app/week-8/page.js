@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import NewItem from '../../week-8/new-item';
-import ItemList from '../../week-8/item-list';
+import NewItem from './week-8/new-item';
+import ItemList from './week-8/item-list';
 import itemsData from './items.json';
-import MealIdeas from '../../week-8/meal-ideas';
+import MealIdeas from './meal-ideas';
 
 export default function Page() {
   const [items, setItems] = useState(itemsData);
