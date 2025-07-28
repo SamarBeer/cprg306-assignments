@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useUserAuth } from '../_utils/auth-context';
 import NewItem from '../../week-8/new-item';
 import ItemList from '../../week-8/item-list';
 import itemsData from './items.json';
@@ -9,21 +11,29 @@ import MealIdeas from '../../week-8/meal-ideas';
 export default function Page() {
   const [items, setItems] = useState(itemsData);
   const [selectedItemName, setSelectedItemName] = useState('');
+  const { user } = useUserAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!user) {
+      router.push('/week-9');
+    }
+  }, [user, router]);
 
   const handleAddItem = (item) => {
     setItems((prev) => [...prev, item]);
   };
 
   const handleItemSelect = (rawName) => {
-    // Clean name: remove emojis and extra descriptions
     const clean = rawName
       .split(',')[0]
-      .replace(/[^\p{L}\p{N}\s]/gu, '') // removes emojis and punctuation
+      .replace(/[^\p{L}\p{N}\s]/gu, '')
       .trim()
       .toLowerCase();
-
     setSelectedItemName(clean);
   };
+
+  if (!user) return null;
 
   return (
     <main className="min-h-screen bg-gray-100 p-6">
