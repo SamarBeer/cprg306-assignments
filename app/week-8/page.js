@@ -2,8 +2,8 @@
 console.log("🧪 Fresh week-8/page.js build triggered");
 
 import { useState } from 'react';
-import NewItem from './week-8/new-item';
-import ItemList from './week-8/item-list';
+import NewItem from './new-item';
+import ItemList from './item-list';
 import itemsData from './items.json';
 import MealIdeas from './meal-ideas';
 
