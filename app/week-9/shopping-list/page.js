@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUserAuth } from '../_utils/auth-context';
-import NewItem from '../../week-8/new-item';
-import ItemList from '../../week-8/item-list';
+import NewItem from './new-item';
+import ItemList from './item-list';
 import itemsData from './items.json';
-import MealIdeas from '../../week-8/meal-ideas';
+import MealIdeas from './meal-ideas';
 
 export default function Page() {
   const [items, setItems] = useState(itemsData);
